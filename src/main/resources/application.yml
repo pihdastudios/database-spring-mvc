@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: "jdbc:mariadb://localhost:3306/web_customer_tracker?useSSL=false"
+    username: "springstudent"
+    password: "springstudent"
+    driver-class-name: "org.mariadb.jdbc.Driver"
