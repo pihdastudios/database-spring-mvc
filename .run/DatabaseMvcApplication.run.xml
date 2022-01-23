@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DatabaseMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="database-mvc.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DatabaseMvcApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" value="11" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
