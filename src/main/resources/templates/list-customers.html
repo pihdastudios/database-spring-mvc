@@ -17,7 +17,6 @@
 
             <input type="button" value="Add Customer" onclick="window.location.href='showFormForAdd'; return false;"
                    class="add-button"/>
-
             <table>
                 <tr>
                     <th>First Name</th>
@@ -30,9 +29,10 @@
                     <td th:text="${customer.lastName}"></td>
                     <td th:text="${customer.email}"></td>
                     <td>
-                        <button type="button" th:href="@{/customer/showFormForUpdate(customerId=${customer.id})}">
+                        <input type="hidden" th:value="${customer.id}" name="customerId">
+                        <a type="submit" th:href="@{/customer/showFormForUpdate(customerId=${customer.id})}">
                             Update
-                        </button>
+                        </a>
                     </td>
                 </tr>
 
