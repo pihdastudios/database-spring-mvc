@@ -32,6 +32,10 @@
                         <a type="submit" th:href="@{/customer/showFormForUpdate(customerId=${customer.id})}">
                             Update
                         </a>
+                        |
+                        <a type="submit" onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false" th:href="@{/customer/delete(customerId=${customer.id})}">
+                            Delete
+                        </a>
                     </td>
                 </tr>
 

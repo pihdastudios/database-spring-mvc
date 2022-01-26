@@ -30,4 +30,9 @@ public class CustomerServiceImpl implements CustomerService {
     public Customer getCustomer(int id) {
         return customerRepository.getById(id);
     }
+
+    @Override
+    public void deleteCustomer(int id) {
+        customerRepository.deleteById(id);
+    }
 }
